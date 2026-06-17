@@ -6,7 +6,7 @@
 
 ## Featured Projects
 
-### Interactive Graphics Engine
+### [Interactive Graphics Engine](./shader.md)
 *A mini-rendering engine showcasing a deferred rendering pipeline architecture with a variety of demo tools to push hardware to its limit and contrast the performance of forward rendering.*
 * **Watch:** [30-Second Video Demo](Insert link later)
 * **Codebase:** [Full Project Repository](Insert link later)
