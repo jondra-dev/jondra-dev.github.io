@@ -7,13 +7,24 @@
 ## Featured Projects
 
 ### [Interactive Graphics Engine](./shader.md)
-*A mini-rendering engine showcasing a deferred rendering pipeline architecture with a variety of demo tools to push hardware to its limit and contrast the performance of forward rendering.*
-* **Watch:** [30-Second Video Demo](Insert link later)
-* **Codebase:** [Full Project Repository](Insert link later)
-* **Key Tech:** C++, OpenGL, custom shader implementations, BRDF math.
+*A mini-rendering engine showcasing a deferred rendering pipeline architecture with a variety of demo tools to push hardware to its limit and contrast the performance of deferred against forward rendering.*
 
-### Team SkuppyWuppies (Capstone Project)
-*Lead Engineer for the engineering sub-team  of 3 people within a two-semester game development period.*
+<iframe
+ width="100%"
+ height="420"
+ src="https://youtube-nocookie.com/embed/Cnc0-1fAuSU"
+ title="SHADER Demo Recording"
+ frameborder="0"
+ allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+ allowfullscreen>
+</iframe>
+
+* **Codebase:** [Full Project Repository](Insert link later)
+* **Key Tech:** C++, OpenGL, Custom Shaders in GLSL, BRDF Material Models
+
+### Spellcatcher
+#### Team SkuppyWuppies (Capstone Project)
+*Lead Engineer for the sub-team of 3 engineers on a 15-person interdisciplinary team within a two-semester game development period.*
 * **Role:** Managed codebase architecture, repository stability, cross-sub-team coordination and integration, workflow patterns, style conventions, organization, and more.
 * **Code Highlights:** [Insert Code Stuff here]
 
@@ -27,4 +38,5 @@
   * Unreal Engine 5
   * Visual Studio 2022
   * Eclipse
-  * ...
+  * Visual Studio Code
+  * Emacs
