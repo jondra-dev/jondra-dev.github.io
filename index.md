@@ -12,7 +12,7 @@
 <iframe
  width="100%"
  height="420"
- src="https://youtube-nocookie.com/embed/Cnc0-1fAuSU"
+ src="https://www.youtube-nocookie.com/embed/Cnc0-1fAuSU"
  title="SHADER Demo Recording"
  frameborder="0"
  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
