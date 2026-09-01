@@ -22,7 +22,7 @@
 * **Codebase:** [Full Project Repository](Insert link later)
 * **Key Tech:** C++, OpenGL, Custom Shaders in GLSL, BRDF Material Models
 
-### Spellcatcher
+### [Spellcatcher](./capstone.md)
 #### Team SkuppyWuppies (Capstone Project)
 *Lead Engineer for the sub-team of 3 engineers on a 15-person interdisciplinary team within a two-semester game development period.*
 * **Role:** Managed codebase architecture, repository stability, cross-sub-team coordination and integration, workflow patterns, style conventions, organization, and more.
