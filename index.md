@@ -25,13 +25,16 @@
 ### [Spellcatcher](./capstone.md)
 #### Team SkuppyWuppies (Capstone Project)
 *Lead Engineer for the sub-team of 3 engineers on a 15-person interdisciplinary team within a two-semester game development period.*
-* **Role:** Managed codebase architecture, repository stability, cross-sub-team coordination and integration, workflow patterns, style conventions, organization, and more.
-* **Code Highlights:** [Insert Code Stuff here]
+* **Role:** Managed codebase architecture, repository stability, cross-sub-team coordination and integration, workflow patterns, style conventions, organization, engineering presentations, and more.
+* **Features Developed:** [Insert Code Stuff here]
 
 ---
 
 ## Technical Skills
-* **Languages:** (In relative order of proficiency.)
+**Languages:** (In relative order of proficiency.)
+* C#, C++, Java
+* Python, C, JavaScript, SQL, Bash, Kotlin
+* Rust, Go, Racket
 
 **Engines & IDEs:**
   * Unity (2022.3 LTS, 6.4)
