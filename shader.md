@@ -31,7 +31,7 @@
 * **Continuous Scene Rotation:** Stress-testing hardware rasterization and culling across changing viewing angles, and clearing contrasting render pipeline performance.
 * **G-Buffer Diagnostic View:** Live 4-quadrant split showing internal render targets and final composited image.
 * **The Procedural Teapot Cube:** Scalable geometric grids generating high vertex counts (combined with many lights) to push rendering stress tests.
-* **Live Pipeline Toggle (`TAB`):** Real-time switching between Forward and Deferred pipelines to contrast hardware execution under load.
+* **Live Pipeline Toggle:** Real-time switching between Forward and Deferred pipelines to contrast hardware execution under load.
 
 ---
 
