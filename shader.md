@@ -6,6 +6,11 @@
 **Tech Stack:** C++ | OpenGL | GLSL | GLEW | FreeGLUT  
 **Codebase Scale:** ~2,000 lines of C++ architecture, ~250 lines of custom GLSL shaders
 
+<figure style="text-align: center;">
+  <img src="./img/shader_teapot.png" width="90%" alt="SHADER Teapot Scene">
+  <figcaption><i>A teapot model on a plane with colored lights.</i></figcaption>
+</figure> 
+
 ---
 
 <iframe
@@ -35,7 +40,7 @@
 The core objective of SHADER was to build and benchmark a **deferred rendering pipeline** against a traditional **forward rendering pipeline** under heavy dynamic lighting loads.
 
 <figure style="text-align: center;">
-  <img src="./gbuffer_quad_view.png" width="90%" alt="G-Buffer Quadrant Split View">
+  <img src="./img/shader_gbuffer_textures.png" width="90%" alt="G-Buffer Quadrant Split View">
   <figcaption><i>G-Buffer Quadrant Diagnostic: Position (Top-Left), Surface Normals (Top-Right), Packed Albedo + Specular (Bottom-Left), Final Shaded Composite (Bottom-Right).</i></figcaption>
 </figure>
 
@@ -62,8 +67,8 @@ Whether there are 10 teapots or 1,000 teapots stacked behind each other, the exp
 ## 📊 Stress-Testing Performance
 
 <figure style="text-align: center;">
-  <img src="./inside_teapot_cube.png" width="90%" alt="Inside the Teapot Cube Stress Scene">
-  <figcaption><i>Free-camera perspective inside a 343-teapot procedural cube stress-test illuminated by dynamic point lights.</i></figcaption>
+  <img src="./img/shader_inside_teapot_cube.png" width="90%" alt="Inside the Teapot Cube Stress Scene">
+  <figcaption><i>Free-camera perspective inside a 125-teapot cube illuminated by 400 dynamic point lights.</i></figcaption>
 </figure>
 
 Toward the end of the video, keep an eye on the title bar showing the active mode (`Deferred` vs. `Forward`):
