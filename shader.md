@@ -55,9 +55,9 @@ If a scene contains 50 overlapping dynamic lights, a forward renderer runs expen
 Deferred rendering splits the frame into two distinct stages:
 
 1. **The Geometry Pass:** Objects are drawn once into multiple off-screen framebuffer render targets (the **G-Buffer**). Rather than calculating lighting here, the shaders simply record surface data per pixel:
-   * **Target 1 (Position):** View-space coordinate data ($X, Y, Z$).
-   * **Target 2 (Normals):** Surface normal vectors ($X, Y, Z$) for lighting calculations.
-   * **Target 3 (Albedo & Specular):** Surface base color ($RGB$) packed with specular reflection intensity stored in the Alpha channel.
+   * **Target 1 (Position):** View-space coordinate data (X, Y, Z).
+   * **Target 2 (Normals):** Surface normal vectors (X, Y, Z) for lighting calculations.
+   * **Target 3 (Albedo & Specular):** Surface base color (RGB) packed with specular reflection intensity stored in the Alpha channel.
 2. **The Deferred Lighting Pass:** Geometry is ignored entirely. The engine draws a single screen-space quad, samples the G-Buffer textures, and computes the lighting model (ambient, diffuse, specular attenuation) **only once per visible pixel on screen**. 
 
 Whether there are 10 teapots or 1,000 teapots stacked behind each other, the expensive lighting equations only run for the pixels that end up on the screen.
@@ -73,7 +73,7 @@ Whether there are 10 teapots or 1,000 teapots stacked behind each other, the exp
 
 Toward the end of the video, keep an eye on the title bar showing the active mode (`Deferred` vs. `Forward`):
 
-* **The Scene:** A procedural $7 \times 7 \times 7$ grid (**343 teapots**) surrounded by **1,500 dynamic, animated point lights**.
+* **The Scene:** A procedural 7 \times 7 \times 7 grid (**343 teapots**) surrounded by **1,500 dynamic, animated point lights**.
 * **The Result:** The forward rendering pipeline drops to sluggish framerates because it attempts to shade thousands of occluded surfaces for each light source. Switching over to the deferred pipeline instantly returns the scene to a smooth, interactive framerate. That's the power of deferred rendering, and an excellent example of why Game Engines all use Deferred Rendering to achieve playable frame counts.
 
 ---
