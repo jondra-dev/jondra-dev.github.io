@@ -3,7 +3,7 @@
 # SpellCatcher
 ### Lead Systems & Gameplay Engineer
 *15-Person Capstone Team (SkuppyWuppies) | Unity (C#) | Published on Steam*
-<img width="2735" height="1250" alt="Title Logo" src="https://github.com/user-attachments/assets/d6797fb6-3dc8-4eba-9467-cae29c842567" />
+<img width="80%" alt="Title Logo" src="https://github.com/user-attachments/assets/d6797fb6-3dc8-4eba-9467-cae29c842567" />
 
 **Role:** Lead Engineer (Sub-team Lead of 3 Engineers)
 
