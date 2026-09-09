@@ -23,7 +23,9 @@
 * **State Interrupt Handling:** Implemented logic to cleanly interrupt active spell casts, preventing spell execution desyncs during menu or inventory transitions.
 * **Full Menu UI Systems:** Collaborated with the 2D art team to integrate custom sprite sheets, modular button prefabs, and dynamic navigation bindings across Main, Pause, and Settings menus.
 
-TODO: INSERT VIDEO OF CHANGING SPELLS AND INVENTORY SLOTS WITH ITEMS IN THEM
+<p align="center">
+  <img src="./img/ui_demo.gif" width="80%" alt="Dynamic Spell and Inventory UI Hotbars">
+</p>
 ---
 
 ## 🛠️ 2. Custom Audio Pipeline & Automation Tooling
