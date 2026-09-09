@@ -3,7 +3,7 @@
 # SpellCatcher
 ### Lead Systems & Gameplay Engineer
 *15-Person Capstone Team (SkuppyWuppies) | Unity (C#) | Published on Steam*
-<img width="80%" alt="Title Logo" src="https://github.com/user-attachments/assets/d6797fb6-3dc8-4eba-9467-cae29c842567" />
+<img width="80%" alt="Title Logo" src="./img/spellcatchertitle.png" />
 
 **Role:** Lead Engineer (Sub-team Lead of 3 Engineers)
 
@@ -21,12 +21,7 @@
 * **Dynamic Spell Hotbar:** Engineered a responsive UI manager featuring an interpolated sliding indicator following active selection, dynamic rune counts, and real-time icon updates tied to player inventory state.
 * **Codex Encyclopedia System:** Architected a modular creature encyclopedia utilizing instantiated button prefabs, dynamic scroll view data binding, and clean state toggles to prevent UI softlocks.
 * **State Interrupt Handling:** Implemented logic to cleanly interrupt active spell casts, preventing spell execution desyncs during menu or inventory transitions.
-* **Full Menu UI Systems:** Coordinated with 2D artist to make Main Menu, Settings Menu, and Pause Menus, all with dedicated artwork, buttons, and configurable keybinds.
-
-<figure style="text-align: center;">
-  <img src="./img/audiomanager.png" width="45%" alt="Audio Manager Interface">
-  <figcaption><i>The Unity interface for the AudioManager.</i></figcaption>
-</figure>
+* **Full Menu UI Systems:** Collaborated with the 2D art team to integrate custom sprite sheets, modular button prefabs, and dynamic navigation bindings across Main, Pause, and Settings menus.
 
 TODO: INSERT VIDEO OF CHANGING SPELLS AND INVENTORY SLOTS WITH ITEMS IN THEM
 ---
@@ -37,6 +32,11 @@ TODO: INSERT VIDEO OF CHANGING SPELLS AND INVENTORY SLOTS WITH ITEMS IN THEM
 * **Spatial Audio Engine:** Integrated dynamic audio management featuring 3D spatial positioning, loop control, and pitch variance for spell-casting, creature capture sequences, and environment interactions.
 * **`AudioScanner.py` Pipeline Tool:** Developed an independent Python automation utility that parsed the entire C# codebase, cross-referencing registered audio metadata against active script invocations to identify orphaned clips and missing sound registrations.
 * **Contextual Feedback:** Implemented surface-aware kinematic sound triggers (e.g., differentiated landing audio based on ground vs. water collision) and proximity-based audio triggers with variable attenuation.
+
+<figure style="text-align: center;">
+  <img src="./img/audiomanager.png" width="45%" alt="Audio Manager Interface">
+  <figcaption><i>Custom Unity inspector interface exposing spatial blend curves, pitch variance, and distance attentuation parameters to sound designers.</i></figcaption>
+</figure>
 
 ---
 
@@ -68,6 +68,17 @@ public bool allowAirAcceleration = true; // whether to allow the player to accel
 ## 🚢 4. Release Engineering & Team Stewardship
 *Managing repository stability, scene recovery, and Steam deployment.*
 
-* **Build Master:** Managed builds during the entire project development cycle, with naming and versioning, and uploaded to a shareable drive so teammates could always access recent builds and for use in playtests, and ultimately for deployment to Steam.
+* **Build Master:** Served as Build Master across the full development cycle: managed semantic versioning, maintained internal distribution pipelines for playtesting, and packaged gold master builds for Steamworks deployment.
 * **Merge Conflict & Scene Recovery:** Resolved critical Git merge conflicts across Unity scene YAML files and vertical-slice data, restoring lost work by hand.
 * **Code Architecture & Styles:** Established project hierarchies across all disciplines; provided naming schema for whole team to follow for ease in searching and storing assets; encouraged the use of specific coding styles and design patterns.
+
+<div style="display: flex; gap: 16px; justify-content: center; align-items: flex-start; margin: 20px 0;">
+  <figure style="flex: 1; text-align: center; margin: 0;">
+    <img src="./img/screenshot_builds.png" style="width: 100%; border-radius: 6px;" alt="Build Distribution Archive">
+    <figcaption style="margin-top: 8px;"><i>Internal build archive tracking semantic versioning and milestone releases across development.</i></figcaption>
+  </figure>
+  <figure style="flex: 1; text-align: center; margin: 0;">
+    <img src="./img/screenshot_filestructure.png" style="width: 100%; border-radius: 6px;" alt="Repository Organization Standards">
+    <figcaption style="margin-top: 8px;"><i>Asset hierarchy standards established and communicated to maintain repository hygiene across all 15 contributors.</i></figcaption>
+  </figure>
+</div>
