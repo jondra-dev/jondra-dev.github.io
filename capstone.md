@@ -24,8 +24,12 @@
 * **Full Menu UI Systems:** Collaborated with the 2D art team to integrate custom sprite sheets, modular button prefabs, and dynamic navigation bindings across Main, Pause, and Settings menus.
 
 <p align="center">
-  <img src="./img/ui_demo.gif" width="80%" alt="Dynamic Spell and Inventory UI Hotbars">
+  <video width="80%" style="border-radius: 6px;" autoplay loop muted playsinline>
+    <source src="./img/ui_demo.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
 </p>
+
 ---
 
 ## 🛠️ 2. Custom Audio Pipeline & Automation Tooling
