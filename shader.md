@@ -6,11 +6,6 @@
 **Tech Stack:** C++ | OpenGL | GLSL | GLEW | FreeGLUT  
 **Codebase Scale:** ~2,000 lines of C++ architecture, ~250 lines of custom GLSL shaders
 
-<figure style="text-align: center;">
-  <img src="./img/shader_teapot.png" width="60%" alt="SHADER Teapot Scene">
-  <figcaption><i>A teapot model on a plane with colored lights.</i></figcaption>
-</figure> 
-
 ---
 
 <iframe
@@ -28,7 +23,7 @@
 ## 🎯 What to Look For in the Demo
 * **Dynamic Point Light Scaling:** Spawning, managing, and distance-attenuating hundreds of individual point lights using the inverse-square law.
 * **Animated Light Behaviors:** Custom motion paths including orbital ("solar") systems and clustered ("beehive") flitting patterns for the single teapot and teapot cube scenes, respectively.
-* **Continuous Scene Rotation:** Stress-testing hardware rasterization and culling across changing viewing angles, and clearing contrasting render pipeline performance.
+* **Continuous Scene Rotation:** Stress-testing hardware rasterization and culling across changing viewing angles, and clearly contrasting render pipeline performance.
 * **G-Buffer Diagnostic View:** Live 4-quadrant split showing internal render targets and final composited image.
 * **The Procedural Teapot Cube:** Scalable geometric grids generating high vertex counts (combined with many lights) to push rendering stress tests.
 * **Live Pipeline Toggle:** Real-time switching between Forward and Deferred pipelines to contrast hardware execution under load.
@@ -49,7 +44,7 @@ In a traditional forward pipeline, lighting calculations are evaluated for **eve
 
 Imagine 10 teapots sitting in a straight line extending away from the camera. In a worst-case scenario, the GPU processes and shades the back teapot, only to draw the next one directly on top of it, repeating this all the way to the front. 
 
-If a scene contains 50 overlapping dynamic lights, a forward renderer runs expensive lighting mathematics for *every light on every overlapping surface*—even surfaces that get immediately covered up by another object in front of them. This wasted GPU work is called **overdraw**, and as triangle and light counts increase, becomes extremely expensive.
+If a scene contains 50 overlapping dynamic lights, a forward renderer runs expensive lighting mathematics for *every light on every overlapping surface*—even surfaces that get immediately covered up by another object in front of them. This wasted GPU work is called **overdraw**, which becomes exponentially more expensive as light and triangle counts scale up.
 
 ### The Solution: Decoupling Geometry from Lighting (The G-Buffer)
 Deferred rendering splits the frame into two distinct stages:
@@ -71,10 +66,10 @@ Whether there are 10 teapots or 1,000 teapots stacked behind each other, the exp
   <figcaption><i>Free-camera perspective inside a 125-teapot cube illuminated by 400 dynamic point lights.</i></figcaption>
 </figure>
 
-Toward the end of the video, keep an eye on the title bar showing the active mode (`Deferred` vs. `Forward`):
+In the second half of the demo video above, the window title bar tracks the active render pipeline (`Deferred` vs. `Forward`):
 
-* **The Scene:** A procedural 7 \times 7 \times 7 grid (**343 teapots**) surrounded by **1,500 dynamic, animated point lights**.
-* **The Result:** The forward rendering pipeline drops to sluggish framerates because it attempts to shade thousands of occluded surfaces for each light source. Switching over to the deferred pipeline instantly returns the scene to a smooth, interactive framerate. That's the power of deferred rendering, and an excellent example of why Game Engines all use Deferred Rendering to achieve playable frame counts.
+* **The Scene:** A procedural 7 × 7 × 7 grid (**343 teapots**) surrounded by **1,500 dynamic, animated point lights**.
+* **The Result:** The forward rendering pipeline drops to sluggish framerates because it attempts to shade thousands of occluded surfaces for each light source. Switching over to the deferred pipeline instantly returns the scene to a smooth, interactive framerate. That demonstrates the core advantage of deferred shading, and why modern 3D engines rely on deferred or clustered rendering pipelines to handle heavy dynamic lighting loads.
 
 ---
 
