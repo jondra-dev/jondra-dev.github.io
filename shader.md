@@ -26,7 +26,7 @@
 * **Continuous Scene Rotation:** Stress-testing hardware rasterization and culling across changing viewing angles, and clearly contrasting render pipeline performance.
 * **G-Buffer Diagnostic View:** Live 4-quadrant split showing internal render targets and final composited image.
 * **The Procedural Teapot Cube:** Scalable geometric grids generating high vertex counts (combined with many lights) to push rendering stress tests.
-* **Live Pipeline Toggle:** Real-time switching between Forward and Deferred pipelines to contrast hardware execution under load.
+* **Live Pipeline Toggle:** Real-time switching between Forward and Deferred pipelines to contrast hardware execution under load. (Look for `Deferred` and `Forward` in the Title Bar!)
 
 ---
 
@@ -65,8 +65,6 @@ Whether there are 10 teapots or 1,000 teapots stacked behind each other, the exp
   <img src="./img/shader_inside_teapot_cube.png" width="60%" alt="Inside the Teapot Cube Stress Scene">
   <figcaption><i>Free-camera perspective inside a 125-teapot cube illuminated by 400 dynamic point lights.</i></figcaption>
 </figure>
-
-In the second half of the demo video above, the window title bar tracks the active render pipeline (`Deferred` vs. `Forward`):
 
 * **The Scene:** A procedural 7 × 7 × 7 grid (**343 teapots**) surrounded by **1,500 dynamic, animated point lights**.
 * **The Result:** The forward rendering pipeline drops to sluggish framerates because it attempts to shade thousands of occluded surfaces for each light source. Switching over to the deferred pipeline instantly returns the scene to a smooth, interactive framerate. That demonstrates the core advantage of deferred shading, and why modern 3D engines rely on deferred or clustered rendering pipelines to handle heavy dynamic lighting loads.
