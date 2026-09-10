@@ -66,7 +66,7 @@ Whether there are 10 teapots or 1,000 teapots stacked behind each other, the exp
   <figcaption><i>Free-camera perspective inside a 125-teapot cube illuminated by 400 dynamic point lights.</i></figcaption>
 </figure>
 
-* **The Scene:** A procedural 7 × 7 × 7 grid (**343 teapots**) surrounded by **1,500 dynamic, animated point lights**.
+* **The Scene:** In the demo video, you see a procedural 7 × 7 × 7 grid (**343 teapots**) surrounded by **1,500 dynamic, animated point lights**.
 * **The Result:** The forward rendering pipeline drops to sluggish framerates because it attempts to shade thousands of occluded surfaces for each light source. Switching over to the deferred pipeline instantly returns the scene to a smooth, interactive framerate. That demonstrates the core advantage of deferred shading, and why modern 3D engines rely on deferred or clustered rendering pipelines to handle heavy dynamic lighting loads.
 
 ---
