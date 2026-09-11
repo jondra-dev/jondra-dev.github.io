@@ -1,45 +1,55 @@
 # Portfolio
-### Engineer of Software | Graphics | Games
-[📄 Resume (PDF)](./Resume_Jonathan_Draney.pdf) | [GitHub](https://github.com/jondra-dev)
+### Engineer: Software | Graphics | Games
+[📄 Resume (PDF)](./Resume_Jonathan_Draney.pdf) | [GitHub](https://github.com/jondra-dev) | [LinkedIn](https://www.linkedin.com/in/jonathan-draney-715733430/) | [Email](mailto:jonathandraney@outlook.com)
 
 ---
 
 ## Featured Projects
 
-### [Interactive Graphics Engine](./shader.md)
-*A mini-rendering engine showcasing a deferred rendering pipeline architecture with a variety of demo tools to push hardware to its limit and contrast the performance of deferred against forward rendering.*
+### [SHADER: Simple Hardware-Accelerated Deferred Engine and Renderer](./shader.md)
+*A custom C++/OpenGL graphics engine designed to contrast deferred and forward shading under dynamic lighting stress tests.*
 
-<iframe
- width="100%"
- height="420"
- src="https://www.youtube-nocookie.com/embed/Cnc0-1fAuSU"
- title="SHADER Demo Recording"
- frameborder="0"
- allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
- allowfullscreen>
-</iframe>
+<p align="center">
+  <a href="./shader.md">
+    <img src="./img/shader_teapot.png" width="70%" style="border-radius: 6px;" alt="SHADER Teapot Scene with Dynamic Lights">
+  </a>
+</p>
 
-* **Codebase:** [Full Project Repository](Insert link later)
-* **Key Tech:** C++, OpenGL, Custom Shaders in GLSL, BRDF Material Models
+* **Architecture:** Built a multi-target G-Buffer (Position, Normals, packed Albedo + Specular) to decouple geometric rendering from screen-space lighting math.
+* **Lighting Systems:** Distance-attenuated dynamic point lights with inverse-square falloff, randomized motion behaviors, and procedural spawning.
+* **Stress Benchmarking:** Procedural $7\times7\times7$ teapot cube ($343$ meshes) with $1,500$ concurrent dynamic lights demonstrating real-time overdraw elimination.
+* **Tech Stack:** C++, OpenGL, GLSL, GLEW, FreeGLUT
 
-### [Spellcatcher](./capstone.md)
-#### Team SkuppyWuppies (Capstone Project)
-*Lead Engineer for the sub-team of 3 engineers on a 15-person interdisciplinary team within a two-semester game development period.*
-* **Role:** Managed codebase architecture, repository stability, cross-sub-team coordination and integration, workflow patterns, style conventions, organization, engineering presentations, and more.
-* **Features Developed:** [Insert Code Stuff here]
+👉 **[Read Full Architecture Breakdown & Watch Demo ➔](./shader.md)**
+
+---
+
+### [Spellcatcher: Systems & Gameplay Engineering](./capstone.md)
+*First-person creature collection adventure published on Steam, developed by a 15-person interdisciplinary team in Unity (C#).*
+
+<p align="center">
+  <a href="./capstone.md">
+    <img src="./img/spellcatcher_gameplay.png" width="70%" style="border-radius: 6px;" alt="Spellcatcher Gameplay and Active UI">
+  </a>
+</p>
+
+* **Engineering Leadership:** Led a 3-engineer sub-team, managed repository branch integrity, resolved complex YAML merge conflicts, and packaged releases for Steam.
+* **UI/UX Architecture:** Engineered a decoupled hotbar manager with animated selection tracking, inventory data binding, and state-interruption safety to prevent softlocks.
+* **Custom External Tooling:** Created `AudioScanner.py`, an automated Python audit utility that parsed the C# codebase to detect unregistered and orphaned audio assets.
+* **Gameplay & Kinematics:** Designed a 50-parameter first-person movement controller, raycast interaction dispatcher, and flexible designer-facing inventory mechanic systems.
+
+👉 **[Read Systems Breakdown & Implementation Details ➔](./capstone.md)** | **[Steam Store Page](https://store.steampowered.com/app/4551940/SpellCatcher/)**
 
 ---
 
 ## Technical Skills
-**Languages:** (In relative order of proficiency.)
-* C#, C++, Java
-* Python, C, JavaScript, SQL, Bash, Kotlin
-* Rust, Go, Racket
 
-**Engines & IDEs:**
-  * Unity (2022.3 LTS, 6.4)
-  * Unreal Engine 5
-  * Visual Studio 2022
-  * Eclipse
-  * Visual Studio Code
-  * Emacs
+**Languages:**
+* C, C++, C#, Java, Python
+* JavaScript, SQL, Bash, Kotlin, Rust, Go
+
+**Engines & Graphics:**
+* Unity (2022.3 LTS, 6), Unreal Engine 5, OpenGL, GLSL
+
+**Development Tools & Workflows:**
+* Git, GitHub, Visual Studio, VS Code, Emacs, Linux / WSL, Steamworks
