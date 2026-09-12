@@ -1,53 +1,94 @@
 <style>
-  /* Base page styling */
+  /* 1. Page Width & Base Typography */
   body {
     background-color: #16181d !important;
     color: #c9d1d9 !important;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif !important;
     line-height: 1.6 !important;
-    max-width: 880px !important;
+    max-width: 1020px !important; /* Expanded width */
     margin: 40px auto !important;
-    padding: 0 24px !important;
+    padding: 0 32px !important;
   }
 
-  /* Headings & Dividers */
-  h1, h2, h3, h4 { color: #f0f6fc !important; font-weight: 600 !important; }
-  h1 { border-bottom: 1px solid #30363d; padding-bottom: 8px; }
-  hr { border: 0; border-top: 1px solid #30363d; margin: 32px 0; }
+  /* 2. Distinct, Punchy Headers */
+  h1, h2, h3, h4 { 
+    font-weight: 600 !important; 
+  }
+  h1 { 
+    color: #f0f6fc !important; 
+    border-bottom: 1px solid #30363d; 
+    padding-bottom: 8px; 
+  }
+  h2 { 
+    color: #f0f6fc !important; 
+    font-size: 1.6rem !important;
+    margin-top: 36px !important;
+  }
+  /* Project titles: brighter blue with a clean vertical accent bar */
+  h3 { 
+    color: #79c0ff !important; 
+    font-size: 1.35rem !important;
+    border-left: 4px solid #1f6feb;
+    padding-left: 10px;
+    margin-top: 28px !important;
+  }
+  hr { 
+    border: 0; 
+    border-top: 1px solid #30363d; 
+    margin: 36px 0; 
+  }
 
-  /* Links & Accents */
-  a { color: #58a6ff !important; text-decoration: none !important; }
-  a:hover { text-decoration: underline !important; }
+  /* 3. Links */
+  a { 
+    color: #58a6ff !important; 
+    text-decoration: none !important; 
+  }
+  a:hover { 
+    text-decoration: underline !important; 
+  }
 
-  /* Media containers */
+  /* 4. Fix Table / Pipe Links (Converts White Boxes to Dark Containers) */
+  table {
+    background-color: #21262d !important;
+    border: 1px solid #30363d !important;
+    border-radius: 6px !important;
+    border-collapse: separate !important;
+    border-spacing: 0 !important;
+    overflow: hidden !important;
+    margin: 16px 0 !important;
+  }
+  table tr, table tr:nth-child(2n) {
+    background-color: #21262d !important;
+    border: none !important;
+  }
+  table td, table th {
+    background-color: #21262d !important;
+    border: 1px solid #30363d !important;
+    color: #c9d1d9 !important;
+    padding: 8px 16px !important;
+  }
+  table td a {
+    font-weight: 600 !important;
+  }
+
+  /* 5. Code Blocks & Captions */
+  code, pre {
+    background-color: #1f242c !important;
+    color: #e6edf3 !important;
+    border: 1px solid #30363d !important;
+    border-radius: 6px !important;
+  }
+  figcaption {
+    color: #8b949e !important;
+    font-size: 0.85rem !important;
+    margin-top: 6px !important;
+  }
+
+  /* 6. Media Styling */
   img, video, iframe {
     border-radius: 8px;
     border: 1px solid #30363d;
     max-width: 100%;
-  }
-
-  /* Top Navigation Pill Badges */
-  .nav-pills a {
-    display: inline-block;
-    padding: 5px 14px;
-    background: #21262d;
-    color: #58a6ff !important;
-    border: 1px solid #30363d;
-    border-radius: 20px;
-    font-size: 0.9rem;
-    margin-right: 8px;
-    margin-bottom: 8px;
-  }
-  .nav-pills a:hover {
-    background: #30363d;
-    border-color: #8b949e;
-  }
-
-  /* Call-to-action buttons */
-  .cta-link {
-    display: inline-block;
-    margin-top: 8px;
-    font-weight: 600;
   }
 </style>
 
