@@ -5,12 +5,35 @@
     color: #c9d1d9 !important;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif !important;
     line-height: 1.6 !important;
-    max-width: 1020px !important; /* Expanded width */
+    max-width: 1020px !important;
     margin: 40px auto !important;
     padding: 0 32px !important;
   }
 
-  /* 2. Distinct, Punchy Headers */
+  /* 2. Top Navigation Pill Badges */
+  .nav-pills {
+    margin: 16px 0 24px 0 !important;
+  }
+  .nav-pills a {
+    display: inline-block !important;
+    padding: 5px 14px !important;
+    background: #21262d !important;
+    color: #58a6ff !important;
+    border: 1px solid #30363d !important;
+    border-radius: 20px !important;
+    font-size: 0.9rem !important;
+    font-weight: 500 !important;
+    margin-right: 8px !important;
+    margin-bottom: 8px !important;
+    text-decoration: none !important;
+  }
+  .nav-pills a:hover {
+    background: #30363d !important;
+    border-color: #8b949e !important;
+    text-decoration: none !important;
+  }
+
+  /* 3. Distinct Headers & Dividers */
   h1, h2, h3, h4 { 
     font-weight: 600 !important; 
   }
@@ -24,7 +47,6 @@
     font-size: 1.6rem !important;
     margin-top: 36px !important;
   }
-  /* Project titles: brighter blue with a clean vertical accent bar */
   h3 { 
     color: #79c0ff !important; 
     font-size: 1.35rem !important;
@@ -38,7 +60,7 @@
     margin: 36px 0; 
   }
 
-  /* 3. Links */
+  /* 4. Links */
   a { 
     color: #58a6ff !important; 
     text-decoration: none !important; 
@@ -47,8 +69,10 @@
     text-decoration: underline !important; 
   }
 
-  /* 4. Fix Table / Pipe Links (Converts White Boxes to Dark Containers) */
+  /* 5. Snug, Dark Tables (Hugs content instead of full-width stretch) */
   table {
+    width: auto !important;
+    display: inline-table !important;
     background-color: #21262d !important;
     border: 1px solid #30363d !important;
     border-radius: 6px !important;
@@ -65,30 +89,28 @@
     background-color: #21262d !important;
     border: 1px solid #30363d !important;
     color: #c9d1d9 !important;
-    padding: 8px 16px !important;
+    padding: 6px 14px !important;
   }
   table td a {
     font-weight: 600 !important;
   }
 
-  /* 5. Code Blocks & Captions */
+  /* 6. Code & Media */
   code, pre {
     background-color: #1f242c !important;
     color: #e6edf3 !important;
     border: 1px solid #30363d !important;
     border-radius: 6px !important;
   }
-  figcaption {
-    color: #8b949e !important;
-    font-size: 0.85rem !important;
-    margin-top: 6px !important;
-  }
-
-  /* 6. Media Styling */
   img, video, iframe {
     border-radius: 8px;
     border: 1px solid #30363d;
     max-width: 100%;
+  }
+  figcaption {
+    color: #8b949e !important;
+    font-size: 0.85rem !important;
+    margin-top: 6px !important;
   }
 </style>
 
