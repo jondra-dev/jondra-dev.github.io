@@ -17,7 +17,7 @@
 
 * **Architecture:** Built a multi-target G-Buffer (Position, Normals, packed Albedo + Specular) to decouple geometric rendering from screen-space lighting math.
 * **Lighting Systems:** Distance-attenuated dynamic point lights with inverse-square falloff, randomized motion behaviors, and procedural spawning.
-* **Stress Benchmarking:** Procedural $7\times7\times7$ teapot cube ($343$ meshes) with $1,500$ concurrent dynamic lights demonstrating real-time overdraw elimination.
+* **Stress Benchmarking:** Procedural 7 x 7 x 78 teapot cube (343 meshes) with 1,500 concurrent dynamic lights demonstrating real-time overdraw elimination.
 * **Tech Stack:** C++, OpenGL, GLSL, GLEW, FreeGLUT
 
 👉 **[Read Full Architecture Breakdown & Watch Demo ➔](./shader.md)** |
