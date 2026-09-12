@@ -1,6 +1,64 @@
+<style>
+  /* Base page styling */
+  body {
+    background-color: #16181d !important;
+    color: #c9d1d9 !important;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif !important;
+    line-height: 1.6 !important;
+    max-width: 880px !important;
+    margin: 40px auto !important;
+    padding: 0 24px !important;
+  }
+
+  /* Headings & Dividers */
+  h1, h2, h3, h4 { color: #f0f6fc !important; font-weight: 600 !important; }
+  h1 { border-bottom: 1px solid #30363d; padding-bottom: 8px; }
+  hr { border: 0; border-top: 1px solid #30363d; margin: 32px 0; }
+
+  /* Links & Accents */
+  a { color: #58a6ff !important; text-decoration: none !important; }
+  a:hover { text-decoration: underline !important; }
+
+  /* Media containers */
+  img, video, iframe {
+    border-radius: 8px;
+    border: 1px solid #30363d;
+    max-width: 100%;
+  }
+
+  /* Top Navigation Pill Badges */
+  .nav-pills a {
+    display: inline-block;
+    padding: 5px 14px;
+    background: #21262d;
+    color: #58a6ff !important;
+    border: 1px solid #30363d;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    margin-right: 8px;
+    margin-bottom: 8px;
+  }
+  .nav-pills a:hover {
+    background: #30363d;
+    border-color: #8b949e;
+  }
+
+  /* Call-to-action buttons */
+  .cta-link {
+    display: inline-block;
+    margin-top: 8px;
+    font-weight: 600;
+  }
+</style>
+
 # Portfolio
 ### Engineer: Software | Graphics | Games
-[📄 Resume (PDF)](./Resume_Jonathan_Draney.pdf){:target="_blank" rel="noopener"} | [GitHub](https://github.com/jondra-dev){:target="_blank" rel="noopener"} | [LinkedIn](https://www.linkedin.com/in/jonathan-draney-715733430/){:target="_blank" rel="noopener"} | [Email](mailto:jonathandraney@outlook.com){:target="_blank" rel="noopener"}
+<div class="nav-pills">
+  <a href="./Resume_Jonathan_Draney.pdf" target="_blank">📄 Resume (PDF)</a>
+  <a href="https://github.com/jondra-dev" target="_blank">GitHub</a>
+  <a href="https://linkedin.com/in/YOUR_LINK" target="_blank">LinkedIn</a>
+  <a href="mailto:your_email@example.com">Email</a>
+</div>
 
 ---
 
