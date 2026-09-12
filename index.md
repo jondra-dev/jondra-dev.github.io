@@ -1,8 +1,6 @@
-<base target="_blank">
-
 # Portfolio
 ### Engineer: Software | Graphics | Games
-[📄 Resume (PDF)](./Resume_Jonathan_Draney.pdf) | [GitHub](https://github.com/jondra-dev) | [LinkedIn](https://www.linkedin.com/in/jonathan-draney-715733430/) | [Email](mailto:jonathandraney@outlook.com)
+[📄 Resume (PDF)](./Resume_Jonathan_Draney.pdf){:target="_blank" rel="noopener"} | [GitHub](https://github.com/jondra-dev){:target="_blank" rel="noopener"} | [LinkedIn](https://www.linkedin.com/in/jonathan-draney-715733430/){:target="_blank" rel="noopener"} | [Email](mailto:jonathandraney@outlook.com){:target="_blank" rel="noopener"}
 
 ---
 
@@ -40,7 +38,7 @@
 * **Custom External Tooling:** Created `AudioScanner.py`, an automated Python audit utility that parsed the C# codebase to detect unregistered and orphaned audio assets.
 * **Gameplay & Kinematics:** Designed a 50-parameter first-person movement controller, raycast interaction dispatcher, and flexible designer-facing inventory mechanic systems.
 
-👉 **[Read Systems Breakdown & Implementation Details ➔](./capstone.md)** | **[Steam Store Page](https://store.steampowered.com/app/4551940/SpellCatcher/)**
+👉 **[Read Systems Breakdown & Implementation Details ➔](./capstone.md)** | **[Steam Store Page](https://store.steampowered.com/app/4551940/SpellCatcher/){:target="_blank" rel="noopener"}**
 
 ---
 
