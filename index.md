@@ -10,7 +10,7 @@
 *A custom C++/OpenGL graphics engine designed to contrast deferred and forward shading under dynamic lighting stress tests.*
 
 <p align="center">
-  <a href="./shader.md">
+  <a href="./shader.html">
     <img src="./img/shader_teapot.png" width="70%" style="border-radius: 6px;" alt="SHADER Teapot Scene with Dynamic Lights">
   </a>
 </p>
@@ -28,7 +28,7 @@
 *First-person creature collection adventure published on Steam, developed by a 15-person interdisciplinary team in Unity (C#).*
 
 <p align="center">
-  <a href="./capstone.md">
+  <a href="./capstone.html">
     <img src="./img/spellcatcher_gameplay.png" width="70%" style="border-radius: 6px;" alt="Spellcatcher Gameplay and Active UI">
   </a>
 </p>
