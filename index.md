@@ -1,3 +1,5 @@
+<base target="_blank">
+
 # Portfolio
 ### Engineer: Software | Graphics | Games
 [📄 Resume (PDF)](./Resume_Jonathan_Draney.pdf) | [GitHub](https://github.com/jondra-dev) | [LinkedIn](https://www.linkedin.com/in/jonathan-draney-715733430/) | [Email](mailto:jonathandraney@outlook.com)
