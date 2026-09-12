@@ -20,7 +20,7 @@
 * **Stress Benchmarking:** Procedural $7\times7\times7$ teapot cube ($343$ meshes) with $1,500$ concurrent dynamic lights demonstrating real-time overdraw elimination.
 * **Tech Stack:** C++, OpenGL, GLSL, GLEW, FreeGLUT
 
-👉 **[Read Full Architecture Breakdown & Watch Demo ➔](./shader.md)**
+👉 **[Read Full Architecture Breakdown & Watch Demo ➔](./shader.md)** |
 
 ---
 
@@ -52,4 +52,4 @@
 * Unity (2022.3 LTS, 6), Unreal Engine 5, OpenGL, GLSL
 
 **Development Tools & Workflows:**
-* Git, GitHub, Visual Studio, VS Code, Emacs, Linux / WSL, Steamworks
+* Git, GitHub, Visual Studio, VS Code, Emacs, Linux / WSL
