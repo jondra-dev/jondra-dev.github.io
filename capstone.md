@@ -1,3 +1,119 @@
+<style>
+  /* 1. Page Width & Base Typography */
+  body {
+    background-color: #16181d !important;
+    color: #c9d1d9 !important;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif !important;
+    line-height: 1.6 !important;
+    max-width: 1020px !important;
+    margin: 40px auto !important;
+    padding: 0 32px !important;
+  }
+
+  /* 2. Top Navigation Pill Badges */
+  .nav-pills {
+    margin: 16px 0 24px 0 !important;
+  }
+  .nav-pills a {
+    display: inline-block !important;
+    padding: 5px 14px !important;
+    background: #21262d !important;
+    color: #58a6ff !important;
+    border: 1px solid #30363d !important;
+    border-radius: 20px !important;
+    font-size: 0.9rem !important;
+    font-weight: 500 !important;
+    margin-right: 8px !important;
+    margin-bottom: 8px !important;
+    text-decoration: none !important;
+  }
+  .nav-pills a:hover {
+    background: #30363d !important;
+    border-color: #8b949e !important;
+    text-decoration: none !important;
+  }
+
+  /* 3. Distinct Headers & Dividers */
+  h1, h2, h3, h4 { 
+    font-weight: 600 !important; 
+  }
+  h1 { 
+    color: #f0f6fc !important; 
+    border-bottom: 1px solid #30363d; 
+    padding-bottom: 8px; 
+  }
+  h2 { 
+    color: #f0f6fc !important; 
+    font-size: 1.6rem !important;
+    margin-top: 36px !important;
+  }
+  h3 { 
+    color: #79c0ff !important; 
+    font-size: 1.35rem !important;
+    border-left: 4px solid #1f6feb;
+    padding-left: 10px;
+    margin-top: 28px !important;
+  }
+  hr { 
+    border: 0; 
+    border-top: 1px solid #30363d; 
+    margin: 36px 0; 
+  }
+
+  /* 4. Links */
+  a { 
+    color: #58a6ff !important; 
+    text-decoration: none !important; 
+  }
+  a:hover { 
+    text-decoration: underline !important; 
+  }
+
+  /* 5. Snug, Dark Tables (Hugs content instead of full-width stretch) */
+  table {
+    width: auto !important;
+    display: inline-table !important;
+    background-color: #21262d !important;
+    border: 1px solid #30363d !important;
+    border-radius: 6px !important;
+    border-collapse: separate !important;
+    border-spacing: 0 !important;
+    overflow: hidden !important;
+    margin: 16px 0 !important;
+  }
+  table tr, table tr:nth-child(2n) {
+    background-color: #21262d !important;
+    border: none !important;
+  }
+  table td, table th {
+    background-color: #21262d !important;
+    border: 1px solid #30363d !important;
+    color: #c9d1d9 !important;
+    padding: 6px 14px !important;
+  }
+  table td a {
+    font-weight: 600 !important;
+  }
+
+  /* 6. Code & Media */
+  code, pre {
+    background-color: #1f242c !important;
+    color: #e6edf3 !important;
+    border: 1px solid #30363d !important;
+    border-radius: 6px !important;
+  }
+  img, video, iframe {
+    border-radius: 8px;
+    border: 1px solid #30363d;
+    max-width: 100%;
+  }
+  figcaption {
+    color: #8b949e !important;
+    font-size: 0.85rem !important;
+    margin-top: 6px !important;
+  }
+</style>
+
 [⬅️ Back to Portfolio](./)
 
 # SpellCatcher
