@@ -120,7 +120,7 @@
   <a href="./Resume_Jonathan_Draney.pdf" target="_blank">📄 Resume (PDF)</a>
   <a href="https://github.com/jondra-dev" target="_blank">GitHub</a>
   <a href="https://linkedin.com/in/jonathan-draney-715733430/" target="_blank">LinkedIn</a>
-  <a href="mailto:your_email@example.com">Email</a>
+  <a href="mailto:jonathandraney@outlook.com">jonathandraney@outlook.com</a>
 </div>
 
 ---
