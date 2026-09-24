@@ -115,7 +115,7 @@
 </style>
 
 # Portfolio
-### Engineer: Software | Graphics | Games
+### Software Engineer | Graphics Engineer | Games Engineer
 <div class="nav-pills">
   <a href="./Resume_Jonathan_Draney.pdf" target="_blank">📄 Resume (PDF)</a>
   <a href="https://github.com/jondra-dev" target="_blank">GitHub</a>
